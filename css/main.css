@@ -1,0 +1,219 @@
+
+/**********************************
+GENERAL
+***********************************/
+body {
+  font-family: 'Raleway', sans-serif;
+  background: #ffa949 url('../img/sicilian-sunset.jpg') no-repeat center / cover;
+}
+#wrapper {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+h3 {
+  margin: 0 0 1em 0;
+}
+
+/**********************************
+HEADING
+***********************************/
+header {
+  float: left;
+  margin: 0 0 30px 0;
+  padding: 5px 0 0 0;
+  width: 100%;
+}
+
+#logo {
+  text-align: center;
+  margin: 0;
+}
+
+h1 {
+  font-family: 'Josefin Slab', sans-serif;
+  margin: 15px 0;
+  font-size: 1.75em;
+  font-weight: normal;
+  line-height: 0.8em;
+}
+
+h2 {
+  font-size: 0.75em;
+  margin: -5px 0 0;
+  font-weight: normal;
+}
+h3{
+  display: none;
+}
+/**********************************
+NAVIGATION
+***********************************/
+nav {
+  text-align: center;
+  padding: 10px 0;
+  margin: 20px 0 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0 10px;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  font-weight: 800;
+  padding: 15px 10px;
+}
+
+/**********************************
+FOOTER
+***********************************/
+footer {
+  font-size: 0.75em;
+  text-align: center;
+  clear: both;
+  padding-top: 50px;
+  color: #CCC;
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+}
+
+/**********************************
+PAGE: TAKE ACTION
+***********************************/
+.path {
+  margin: 1em;
+  padding: 0;
+}
+.start{
+  text-align: center;
+  color: white;
+  
+}
+.start h2, h3 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.start p {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+
+.button{
+  background: rgba(61, 57, 62, .6);
+  border: none;
+  color: white;
+  display: block;
+  min-width: 80px;
+  width: 30%;
+  margin: 5px 35%;
+}
+.button:hover {
+  box-shadow: inset 0 0 1px 1px rgba(255, 255, 255, 1);/* makes buttons seem highlighted when hovered on*/ 
+}
+#zip-code-search{
+  background: rgba(61, 57, 62, .6);
+  color: rgba(237, 239, 240, 1);
+  border-style: ridge;
+  border-color: rgb(61, 57, 62)
+}
+
+/**********************************
+PAGE: ABOUT
+***********************************/
+.profile-photo {
+  display: block;
+  max-width: 150px;
+  margin: 0 auto 30px;
+  border-radius: 100%;
+}
+
+/**********************************
+PAGE: CONTACT
+***********************************/
+.contact-info {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.9em;
+}
+
+.contact-info a {
+  display: block;
+  min-height: 20px;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  padding: 0 0 0 30px;
+  margin: 0 0 10px;
+}
+
+.contact-info li.phone a {
+  background-image: url('../img/phone.png');
+}
+
+.contact-info li.mail a {
+  background-image: url('../img/mail.png');
+}
+
+.contact-info li.twitter a {
+  background-image: url('../img/twitter.png');
+}
+
+/**********************************
+COLORS
+***********************************/
+/* site body */
+body {
+  background-color: #FFF;
+  color: #999;
+}
+
+/* green header */
+header {
+/*  background: #6AB47B;*/
+  border-color: rgba(255, 209, 127, 1);
+}
+
+/* nav background on mobile */
+nav {
+/*  background: rgba(255, 207, 131, .2);*/
+}
+
+/* logo text */
+h1, h2 {
+  color: #FFF;
+}
+
+/* links */
+a {
+  color: #6AB47B;
+}
+
+/* nav link */
+nav a, nav a:visited {
+  color: #FFF;
+}
+
+/* selected nav link */
+nav a.selected, nav a:hover {
+  color: rgba(255, 209, 127, 1);
+}
