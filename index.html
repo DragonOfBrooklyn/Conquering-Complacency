@@ -24,15 +24,24 @@
       </nav>
     </header>
     <div class="start path">
-      <section>
-	  	<h2>Conquering complacency starts with you</h2>
+	  	<h2>Conquering complacency in your community begins with you getting involved</h2>
 			<h3>Narrowing down your search area</h3>
-			<p>Lead your community against the forces of complacency</p>
-			<p>Below, search your area for events to get involved within your community</p>
-   		<textarea id="zip-code-search">Zip Code or City Name</textarea>
-		<! here the text from zip-code-search will copy so it's viewable from the compressed area> 
-        <button id="search-button" class="button">Search</button> <!Controlled by JS, will search the web for events in the above listed zip area> 
-      </section>
+			<!Below, Search for Events or Add Events to our Catalogue>
+			<section id="start_selection">
+				<button type="button" class="start_button button" id="search_entries">Search for Events</button>
+				<button type="button" class="start_button button" id="add_entries">Add Events to Catalogue</button>
+			</section>
+   		<section id="search_section" class="start_section">
+				<form action="index.html" method="post">
+					<input type="text" value="Zip Code or City Name" id="zip_code_search" class="zipCodeSearch">
+					<button type="submit" id="search_button" class="button">Search</button>
+				</form>
+			</section>
+			<section id="entry_section" class="start_section">
+				<form action="index.html" method="post">
+					<! This is the form that will allow users to enter an event into our catalogue/database>
+				</form>
+			</section>
     </div>
 		<div class="searching path">
 			<h2>Finding locations to make your voice heard... </h2>
@@ -41,7 +50,23 @@
 		<div class="locations path">
 			<h2>Here are some events in your area</h2>
 			<section class="results">
-				<! this is where the results of the internet search will be>
+				<! the results currently displaying is a test to see how much space to allocate for responsive design>
+				<script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyDK-H9_uf6srjP2jV_1cd_252V2XbxwP64'></script>
+				<div style='overflow:hidden;height:400px;width:420px;'>
+					<div id='gmap_canvas' style='height:400px;width:420px;'></div>
+					<style>#gmap_canvas img{max-width:none!important;background:none!important}</style>
+				</div>
+				<a id="ghostwriter" href='https://acadooghostwriter.com/'>acadooghostwriter.com</a>
+				<script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=66e48c226cdc710da95721a62bcc6f14e016748a'></script>
+				<script type='text/javascript'>function init_map()
+					{var myOptions = {zoom:12,center:new google.maps.LatLng(40.505575, -80.060568),mapTypeId: google.maps.MapTypeId.ROADMAP};
+					map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
+					marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(40.505575, -80.060568)});
+					infowindow = new google.maps.InfoWindow({content:'<strong>Conquering Complacency HQ</strong><br>14 Hillcrest Drive<br>15202 Bellevue<br>'});
+					google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}
+					google.maps.event.addDomListener(window, 'load', init_map);
+				</script>
+				<! this is where the results of the internet search will be, currently it shows sample information>
 			</section>
 		</div>
 	      <footer>

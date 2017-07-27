@@ -1,5 +1,14 @@
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 460px) {
+ /**********************************
+  NAVIGATION
+  ***********************************/  
+ nav ul{
+  flex-direction: row;
   
+ }
+
+ 
+ 
   /**********************************
   TWO COLUMN LAYOUT
   ***********************************/
@@ -71,7 +80,7 @@
   }
   
   header {
-    border-bottom: 5px solid #599a68;
+    border-bottom: 5px solid rgba(255, 209, 127, 1);
     margin-bottom: 60px;
   }
 
